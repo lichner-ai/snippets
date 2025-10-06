@@ -385,7 +385,7 @@ class OracleCDCProcessor:
 - **RAC Considerations:** LogMiner session affinity in Oracle RAC environments
 - **Supplemental Logging:** Additional overhead for capturing complete row images
 
-**Verdict:** ✅ Modified date approach offers more control over performance impact, CDC provides lower latency but with continuous resource usage.
+**Verdict:** Modified date approach offers more control over performance impact, CDC provides lower latency but with continuous resource usage.
 
 ### 4. Latency and Freshness
 
