@@ -1,4 +1,4 @@
-# CDC vs Custom Implementation for Oracle Database: Modified Date + Background Job
+# CDC vs Custom Implementation for Oracle Database
 
 ## Executive Summary
 
