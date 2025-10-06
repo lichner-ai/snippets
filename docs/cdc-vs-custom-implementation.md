@@ -510,7 +510,7 @@ Operational:
 ```python
 # Oracle-specific good fit scenarios
 oracle_scenarios = [
-    "Batch processing is acceptable (hourly/daily updates)",
+    "Batch processing is acceptable (minute/hour/day updates)",
     "Legacy Oracle systems with limited budget for upgrades",
     "Cost-sensitive environments (avoiding Oracle GoldenGate licensing)",
     "Limited Oracle CDC expertise in organization",
