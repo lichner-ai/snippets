@@ -1,10 +1,3 @@
----
-layout: default
-title: CDC vs Custom Implementation for Oracle Database
-description: Comprehensive comparison between Change Data Capture (CDC) and custom implementation using modified date tracking with background jobs for Oracle databases
-date: 2025-01-06
----
-
 # CDC vs Custom Implementation for Oracle Database: Modified Date + Background Job
 
 ## Executive Summary
@@ -606,16 +599,16 @@ class OracleInventorySync:
 
 | Factor | Oracle Modified Date + Job | Oracle CDC (LogMiner/GoldenGate) | Winner |
 |--------|---------------------------|--------------------------------|---------|
-| Implementation Complexity | ⭐⭐⭐⭐ | ⭐ | Modified Date |
-| Data Completeness | ⭐⭐ | ⭐⭐⭐⭐⭐ | CDC |
-| Latency | ⭐⭐ | ⭐⭐⭐⭐⭐ (GG) / ⭐⭐⭐ (LogMiner) | CDC |
-| Performance Control | ⭐⭐⭐⭐⭐ | ⭐⭐ | Modified Date |
-| Operational Complexity | ⭐⭐⭐⭐ | ⭐ | Modified Date |
-| Oracle Licensing Cost | ⭐⭐⭐⭐⭐ | ⭐ (GoldenGate expensive) | Modified Date |
-| Oracle Expertise Required | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Modified Date |
-| Scalability with Oracle | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | CDC |
-| Oracle RAC Compatibility | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | Modified Date |
-| Reliability | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | CDC |
+| Implementation Complexity | ★★★★ | ★ | Modified Date |
+| Data Completeness | ★★ | ★★★★★ | CDC |
+| Latency | ★★ | ★★★★★ (GG) / ★★★ (LogMiner) | CDC |
+| Performance Control | ★★★★★ | ★★ | Modified Date |
+| Operational Complexity | ★★★★ | ★ | Modified Date |
+| Oracle Licensing Cost | ★★★★★ | ★ (GoldenGate expensive) | Modified Date |
+| Oracle Expertise Required | ★★★ | ★★★★★ | Modified Date |
+| Scalability with Oracle | ★★★★ | ★★★★★ | CDC |
+| Oracle RAC Compatibility | ★★★★★ | ★★★ | Modified Date |
+| Reliability | ★★★★ | ★★★★★ | CDC |
 
 ## Hybrid Approach Recommendation
 
@@ -651,7 +644,7 @@ This approach allows you to deliver value quickly while maintaining the option t
 
 ### When to Choose Oracle Modified Date + Background Job
 
-✅ **Choose this approach when:**
+**Choose this approach when:**
 - You need a simple, cost-effective Oracle solution
 - Batch processing latency is acceptable for your Oracle workload
 - You have limited Oracle CDC expertise in your organization
@@ -665,7 +658,7 @@ This approach allows you to deliver value quickly while maintaining the option t
 
 ### When to Choose Oracle CDC
 
-✅ **Choose this approach when:**
+**Choose this approach when:**
 - Real-time or near-real-time processing is required from Oracle
 - Complete Oracle transaction tracking (including deletes) is essential
 - You have Oracle Enterprise Edition with appropriate licensing budget
