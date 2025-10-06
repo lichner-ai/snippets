@@ -1,3 +1,10 @@
+---
+layout: default
+title: CDC vs Custom Implementation for Oracle Database
+description: Comprehensive comparison between Change Data Capture (CDC) and custom implementation using modified date tracking with background jobs for Oracle databases
+date: 2025-01-06
+---
+
 # CDC vs Custom Implementation for Oracle Database: Modified Date + Background Job
 
 ## Executive Summary
